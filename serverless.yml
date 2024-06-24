@@ -41,7 +41,7 @@ custom:
     define: { "require.resolve": undefined }
     platform: "node"
     concurrency: 10
-    plugins: "etc/build/plugins.js"
+    # plugins: "etc/build/plugins.js"
     external: ["@civic/prove-icp-principal"]
 
 # you can add statements to the Lambda function's IAM Role here
