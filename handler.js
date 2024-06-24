@@ -1,9 +1,18 @@
 'use strict';
 
 const { proveIcpPrincipal } = require('@civic/prove-icp-principal')
+const { sign } = require('@civic/civic-sign')
+const { webcrypto } = require('@peculiar/webcrypto')
+const { principal } = require('@dfinity/principal')
+const { jwt } = require('did-jwt')
 
 module.exports.hello = async (event) => {
   console.log(proveIcpPrincipal)
+  console.log(sign)
+  console.log(webcrypto)
+  console.log(principal)
+  console.log(jwt)
+
   return {
     statusCode: 200,
     body: JSON.stringify(
