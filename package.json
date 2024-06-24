@@ -1,0 +1,13 @@
+{
+  "name": "serverless-pj",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@civic/prove-icp-principal": "^0.0.23",
+    "serverless": "3"
+  },
+  "scripts": {
+    "deploy": "sls deploy --stage ${STAGE:-lilly} --verbose"
+  }
+}
