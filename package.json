@@ -12,7 +12,7 @@
     "did-jwt": "https://github.com/civicteam/did-jwt#8.0.4-civic"
   },
   "devDependencies": {
-    "serverless-esbuild": "^1.23.3",
+    "serverless-esbuild": "1.26.1",
     "esbuild-plugin-replace": "^1.4.0",
     "esbuild": "^0.14.11"
   },
