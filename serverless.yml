@@ -28,6 +28,22 @@ provider:
 #  stage: dev
 #  region: us-east-1
 
+plugins:
+  - serverless-esbuild
+
+custom:
+  esbuild:
+    bundle: true
+    minify: true
+    sourcemap: false
+    exclude: ["aws-sdk"]
+    target: "node18"
+    define: { "require.resolve": undefined }
+    platform: "node"
+    concurrency: 10
+    plugins: "etc/build/plugins.js"
+    external: ["@civic/prove-icp-principal"]
+
 # you can add statements to the Lambda function's IAM Role here
 #  iam:
 #    role:
